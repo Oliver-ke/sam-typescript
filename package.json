@@ -1,0 +1,41 @@
+{
+  "name": "sam-typescript-template",
+  "version": "1.0.0",
+  "description": "Sam typescript template",
+  "private": true,
+  "dependencies": {
+    "@aws-lambda-powertools/logger": "^2.0.3",
+    "@aws-sdk/client-dynamodb": "^3.192.0",
+    "@aws-sdk/client-s3": "^3.190.0",
+    "@aws-sdk/client-sns": "^3.516.0",
+    "@aws-sdk/lib-dynamodb": "^3.192.0",
+    "@aws-sdk/s3-request-presigner": "^3.190.0",
+    "dayjs": "^1.11.10",
+    "jsonwebtoken": "^9.0.2",
+    "mime-types": "^2.1.35",
+    "source-map-support": "^0.5.19",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.0",
+    "@types/aws-lambda": "^8.10.72",
+    "@types/jest": "^26.0.20",
+    "@types/jsonwebtoken": "^8.5.9",
+    "@types/mime-types": "^2.1.1",
+    "@types/node": "^14.14.26",
+    "@types/uuid": "^8.3.4",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.1",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.1.5"
+  },
+  "scripts": {
+    "build": "node_modules/typescript/bin/tsc",
+    "watch": "node_modules/typescript/bin/tsc -w --preserveWatchOutput",
+    "test": "jest",
+    "dev:up": "./dev/local.sh start",
+    "dev:down": "./dev/local.sh stop",
+    "dev:deploy": "./dev/local.sh deploy",
+    "start:api": "sam local start-api --env-vars env.json"
+  }
+}

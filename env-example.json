@@ -1,0 +1,8 @@
+{
+  "Parameters": {
+    "TABLE_NAME": "backend-api-RecordDatabase-c438a284"
+  },
+  "exampleFunction": {
+    "SAMPLE_ENV_VAR": "SAMPLE_VALUE"
+  }
+}
